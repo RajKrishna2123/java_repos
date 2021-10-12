@@ -1,0 +1,17 @@
+information transfer from one register to another is designated in 
+symbolic form by means id a replacement operator is known as register 
+transfer 
+                    R2 <- R1
+data is transfered bit by bit form right to left for eg
+                    R1                R2
+                    1|1|0|1     ->    1|1|0|1
+*note :- (<-) this operator is known as replacement operator
+- register transfer using control function 
+    normally, we want the transfer to occur only under a predetermined 
+    control condition using if-then statement .
+        
+        for example if (p=1)then(R2<-R1)
+    where p is a control signal generated in tha coontrol section.
+    a control fuction is a boolean variable that is eqaul to 1or 0 
+            P:(R2<-R1) #method of reprentation 
+
