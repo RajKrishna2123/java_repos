@@ -13,12 +13,6 @@ class array1
         {
             array[i]=sc.nextInt();
         }
-         
-        // System.out.println("Array elements are: ");  
-        // for (int i=0; i<n; i++)   
-        // {  -351AZ
-        //     System.out.println(array[i]);  
-        // }
         int temp;
         
         for (i=0;i<n-1;i++)
