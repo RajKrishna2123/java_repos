@@ -93,3 +93,13 @@ external variable
 math module 
 random module 
 wap to perform method overloading by passing single argument to the method series 
+
+anoymous array are that array which has no explicit reference variable for the array 
+metgod to define array :=
+int <variable name> = {"element 1","element2"};
+int[] <variable namr> = new int[]
+
+pass by variable using array
+// while compiling pass by value using array the changes will be seen as error inside the function 
+SEARCHING :- LENEA AND BINARY 
+SORTING :- BUBLE INSERTION,HEAP ,QUICK ,HEAP,MOSE,REDIX
