@@ -10,8 +10,8 @@ public class overloading
     }
     public static void main (String[] args)
     {
-        overloading obj= new overloading();
-        System.out.println(obj.sum(10.0,40));
-        System.out.println(obj.sum(20,10.0));
+        overloading OBJ= new overloading();
+        System.out.println(OBJ.sum(10.0,40));
+        System.out.println(OBJ.sum(20,10.0));
     }
 }

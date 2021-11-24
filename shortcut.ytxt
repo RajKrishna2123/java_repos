@@ -82,7 +82,7 @@ public class mrthods {
 }
 
 the process of creating an oject is called instantiation 
-static doesn't required an object to be invoked 
+static doesn't required an OBJect to be invoked 
 type of variable in java
 local variable
 global variable
@@ -103,3 +103,126 @@ pass by variable using array
 // while compiling pass by value using array the changes will be seen as error inside the function 
 SEARCHING :- LENEA AND BINARY 
 SORTING :- BUBLE INSERTION,HEAP ,QUICK ,HEAP,MOSE,REDIX
+oops - interface (multiple inheritace)
+class A 
+extends B 
+extends c
+but C++ can implement the same with more dificulty and complexity 
+java class cannot be a subclass of more than 1 super class
+so java provides alternate approach to support the concept of multipe inheritance 
+, knon as interface and can be implemented using 
+implements keyword  
+
+syntax 
+
+interface <interface name>
+{
+    variable name;
+    method() decleartion;
+
+}
+interface item 
+{
+    static final int c ;
+    void display ();
+
+}
+it is similar to class
+that contains methods and variable but with method is decleared as abstract
+by defaut methid must be inherited by the class for method definition variable 
+is treated as final 
+example 
+inteface itemconstant 
+{
+    int code=100;
+    string name ="fan";
+
+}
+[
+interface itemmethod
+{
+    void display();
+}
+interface item extends Itemconstant , Itemmethods 
+{
+}
+or 
+class item implements Itemconstant, Itemmethod  
+    {
+        
+    }  
+]
+exception handelling
+exception vs error 
+"to err is human " human beings commit many errors in his life softe=ware engineer may also commit 
+several error while developing software error these error are called bugs and the process of removing them is called
+ debugging 
+
+ ->types of error in java 
+ 1.compile time error :- known as syntactical errors it is found in the code due to which a program fails to compile 
+ for example missing semicolon ,misplaced bracket bloack mis spelling identifiers incompatible assignment 
+ when we have compilation error then java doesn't create .class file until the program becomes error free .
+
+
+ 2.run time error :- it represents inefficiancy of computer systemn to exercute particular statements
+ insufficient memory wroing logic wrong output, stack overflow ,array out of bond exception 
+ Nan error (not a number)
+ for example :- 
+ class Err1 
+ {
+     psvm() // no parametres 
+     {
+         sop ("where is the error ");
+     }
+ } 
+"
+runtime error are not detectend by java compiler they are detected by jvm
+logical  error 
+it depicts the flaws in the logic of the program the programer is solemony responsible for these kind of errors
+exception an exception is a condition that is caused by runtime error in program
+question can i call a compile time error an exception 
+answer NO, 
+how to handle exception at  complie time 
+psvm (_______) throwws IOException 
+
+exceptionhandeling 
+if we want to run the program without any error or exception then we w=should try to catch yje exception object 
+thrown by the error condition and then display an apropriate message for taking corrective action this task is 
+known as exception handling 
+
+Exception handling Mechanism 
+try block 
+
+
+*******draw.io 
+
+
+java usses a keyword try to preface a block of code that is likely to to cause an eror and "throw " an exception throw is also a keyword 
+a catch block defined by the keyword "catch" which catches the exception thrown by the block and handles it apropriately
+finally cloack is excuted irrespective of whether there is an exception or not 
+class Excep1
+{
+    psvm(_____)
+    {
+        try 
+        {
+            sop ("");
+            int n = args.length;
+            sop("N="+n);
+            int a=45/n;
+            sop ("a="+a);
+
+        }
+        catch (exception e)
+        {
+            sop(e);
+        }
+        finally
+        {
+            
+        }
+    }
+}
+
+javac Excep1.java
+java Escept1

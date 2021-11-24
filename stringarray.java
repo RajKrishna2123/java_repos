@@ -4,7 +4,7 @@ import java.lang.String;
 public class stringarray {
     public static void main(String[] args)
     {
-        int n,i;  
+        int n,i,temp;  
         Scanner sc=new Scanner(System.in);
         String[] array = new String[10];
         System.out.println("Enter the elements of the array: ");

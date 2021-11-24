@@ -4,7 +4,7 @@ public class booth_algo
 {
     public static void main(String args[])throws IOException
    {
-     DataInputStream obj=new DataInputStream(System.in);
+     DataInputStream OBJ=new DataInputStream(System.in);
      int a[]={0,0,0,0};                         //common array to perform operation’s
      int tocomp[]={0,0,0,1};           // to convert a binary no to its complement
      int mulc,mulp,q_1=0;
@@ -13,9 +13,9 @@ public class booth_algo
      int q[]=new int[4];                  //stores multiplier in binary format
      int i,carry=0;
     System.out.println(“Enter multiplicant”);
-    mulc=Integer.parseInt(obj.readLine());
+    mulc=Integer.parseInt(OBJ.readLine());
     System.out.println(“Enter multiplier”);
-    mulp=Integer.parseInt(obj.readLine());
+    mulp=Integer.parseInt(OBJ.readLine());
          for(i=3;i>=0;i–)                                                  // convert decimal to binary 
           {
             m[i]=mulc%2;
