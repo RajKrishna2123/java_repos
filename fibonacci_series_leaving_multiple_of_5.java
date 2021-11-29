@@ -4,6 +4,8 @@ public class fibonacci_series_leaving_multiple_of_5 {
     {
         int n ,count=1, first=0 ,second=1 ,sum=0 ,rest;
         Scanner sc=new Scanner(System.in);
+        System.out.print("Name :- Raj Krishna \nSection :- I"+
+                        "\nroll no :- 1000015049\nSap Id :- 1000015049\n");
         System.out.print("Enter the number of elements :-");
         n=sc.nextInt();
         System.out.println(sum);
@@ -23,6 +25,7 @@ public class fibonacci_series_leaving_multiple_of_5 {
                 System.out.println(sum);
             }
         }
+        sc.close();
     }
     
 }
