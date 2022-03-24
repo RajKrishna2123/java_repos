@@ -3,8 +3,8 @@ public class test444 {
     {
         long a=100;
         short b=3;
-        double d=12;
-        float f=(a*b)+d;
+        float d=12;
+        double f=(a*b)+d;
         System.out.println("value %.2f",f);
 
     }

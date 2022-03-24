@@ -281,3 +281,93 @@ if programer doesn't want to handle a checked exception then they should throw t
 throws clause   
 throws clause used when program don't want to hab=ndle the exception 
 throw clause is used when the programer wants to throw an exception explicitly using try catch block    
+
+
+
+life cycle of a thread 
+new born state (when object of thread is created )
+    ->Thread T= new Thread();
+RUNNABLE state (wheenerver we start a thread ) READy state 
+    ->start();
+RUNNING STATE 
+BLOCK STATE 
+    ->whenever we call a sleep method :  Thread.sleep(1000);(work for a definate time)
+    ->another method is: suspend();
+    ->another method is: wait();(for infinite)
+    ->wait for IO requirement
+    ->wait for lock
+    ->all blocked method goes to runnable method via commands as follows 
+        ->Resume();
+
+yeild() method to put thread directly from running state to runnable state 
+constructors of thread class 
+        -> jvm defines constructor on its own when not defined by a developing
+        -> but when defined it does't creates on its own 
+    ->Thread()
+    ->Thread(String str)
+    ->Thread(Runnavle rg)
+    ->Thread(Runnable tg,String str)
+    ->Thread(Runnable lg Runnable rg)
+    ->Thread(ThreadGroup tg Runnable rg String str)
+
+    *Thread METHODS 
+        ->SetPriority(int p);
+            Thread.MAX.PRIORITY=12
+            Thread.MIN.PRIORITY=1
+            Thread.NORMAL=5
+            exmaple:- Thread t=new Thread();
+                      t.SetPriority(8)
+            higher no means higher priority.
+
+        -> int getPriority()
+        ->SetName(String s)*note this method has no significance so never needed to
+          specify at all just kept as an facility if needed 
+            t.SetName("string");
+        ->Boolean isAlive()
+
+DEMON THREADS
+    ->these are lowest priority thread as service provider works when jvm is ideal
+      for example garbage thread ,GC garbage collection. 
+    ->demon thread in java is a service provider that [provides services to the 
+      user thread. 
+    ->it is used for supporting the user thread in background. 
+    ->it is low priority thread.
+    ->there are many java demon theads running aotumatically example ,gc ,
+      finalizer(works as memory cleaner in backgroud to save memory)
+    ->
+
+not*_ methods starts from small alphabets but name of class starts with capital letter 
+
+*imp questin :- why call start method instead of run :-
+        answer  BOTH methods are correct non of them will throw error but when we call 
+                run method it will act as normal runner for a code snipet but when we 
+                call a start method it will start code snippet with seperate thread 
+                and context swithching which is not possible with run method .
+
+
+>>>>>imp>>>>>>swing setup 😑😑
+important snipet always required to type 
+    ->import javax.swing.*;
+    ->JFrame f= new JFrame(); *note write it under psmv(){}.
+
+now using JFrame as f we can use following inbuilt functions as :
+    ->f.setTitle("text"); -> this defines the tittle bar of application heading name
+     of the application.
+        
+        -> same thing can be done by simple method as: f= new JFrame("");
+            
+            ->*note to use above method you need to specify: static JFrame f; 
+                    under main class file but out of psmv(){}
+
+   
+    ->f.setVisible(true); -> setting visibility (makes application window visible LOL).
+   
+   
+    ->f.setSize(x,y); -> set the boundry of the frame as default when opening
+      ( x= x co-ordinate, y= y co-ordinate).
+
+now using pannel in java as JPanel :
+    ->  every thing that we make in JFrame like button label textfeild form all has to
+    be added in pannel via JPanel.add(<variable>); so that it is added in the frame 
+    if not done nothing will show up in output 😎😎,.😑😑better keep this in mind LOL
+    ;).
