@@ -365,9 +365,51 @@ now using JFrame as f we can use following inbuilt functions as :
    
     ->f.setSize(x,y); -> set the boundry of the frame as default when opening
       ( x= x co-ordinate, y= y co-ordinate).
+    *->Remember never use "f.setLayout(null)" it is useless peice of studborn shit!!!!!
+       because after doing hours of coding to bring an output this maniac will make that
+       all null !!😂😂😂😂 do pranks with it.
+
+    *-> must write syntax "f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);" if not 
+        written even if you close the output window the code will still run in backgroud
+        which is problematic to close every single time (like killing every process
+        maually via task manager or other tools like dump operation in vs code which
+        kills the process)🥲🥲a 
+    
+    *->In order to set the backgroud image for the body of the frame you can use 
+        following code its must to type in order to put a bg image in the body of the 
+        frame:- 
+        f.setContentPane(new JLabel(new ImageIcon("immage location with // symbol")));
+           *note:- that it will only work when address is puth with // symbol by default 
+            in windows location \\ symbloo is used change location tag with // as web 
+            location
+    
+    -> JLabel this fuction helps in defining tittle first then add them to pannel 
+        later as a reffrences defined as follows.
+        l= new JLabel("YO YO YO YO !!!!",JLabel.RIGHT);
+
+    ->we can define multiple pannel and resize them and position them at certain places 
+      using FlowLayout() and defined as belows :-
+        f.setLayout(new FlowLayout());
+      
+
+
+
+
 
 now using pannel in java as JPanel :
     ->  every thing that we make in JFrame like button label textfeild form all has to
     be added in pannel via JPanel.add(<variable>); so that it is added in the frame 
     if not done nothing will show up in output 😎😎,.😑😑better keep this in mind LOL
     ;).
+    *->if two pannels are defined within same block of code then 
+       the most recent one added to tha farme will be considered as final and none of
+       other will be taken in consideration.
+       for exmaple 
+                f.add(q);
+
+		        f.add(p)
+                here p will be taken in considertion anything done within q will not be
+                considered 
+    *-> in order to understand pannels in a better way we can use following command to 
+        manipulate the seize of each individual pannel 
+             p1.setPreferredSize(new Dimension(250,150));
