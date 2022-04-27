@@ -1,14 +1,16 @@
-package javaCode;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class assignment_1 {
-    public static void main(String[] args) {
-String x1="10";
-String x2="20";
+public class RAJ_KRISHNA implements ActionListener
+{
+    public static void main(String[] args) 
+    {
+        String x1="10";
+        String x2="20";
         JFrame f = new JFrame();
-FlowLayout fl = new FlowLayout();
+        FlowLayout fl = new FlowLayout();
         JButton add= new  JButton("Add");
 
         JButton multiply= new  JButton("Multiply");
@@ -19,10 +21,10 @@ FlowLayout fl = new FlowLayout();
         f.add(sub);
 
         ActionListener al = new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                int a=Integer.parseInt(x1);
-                int b=Integer.parseInt(x2);
+                int a=10;
+                int b=20;
 
                 if(e.getSource()==add){
 

@@ -1,5 +1,3 @@
-
-
 class Thre implements Runnable 
 {
     public void run ()

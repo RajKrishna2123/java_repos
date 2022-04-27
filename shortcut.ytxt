@@ -413,3 +413,11 @@ now using pannel in java as JPanel :
     *-> in order to understand pannels in a better way we can use following command to 
         manipulate the seize of each individual pannel 
              p1.setPreferredSize(new Dimension(250,150));
+
+
+
+
+
+
+
+             

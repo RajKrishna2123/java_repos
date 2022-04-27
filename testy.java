@@ -1,6 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-class testy extends JFrame
+class testy extends JFrame  implements ActionListener 
 {   
     static JFrame f;
 	static JButton b1;
@@ -19,20 +19,27 @@ class testy extends JFrame
         f.setLayout(new FlowLayout());
         l= new JLabel("YO YO YO YO !!!!",JLabel.RIGHT);
         l1= new JLabel("YO YO YO YO gr8!!!!",JLabel.RIGHT);
+        final TextField tf=new TextField();  
+        tf.setBounds(50,50, 150,20);
+        Button b=new Button("Click Here");  
+        b.setBounds(50,100,60,30);
         l.setForeground(Color.GREEN);
         l1.setForeground(Color.ORANGE);
+        
         //l.setBounds(0, 800, 120, 20);
         l.setBounds(150, 100, 150, 50);
         l1.setBounds(150, 100, 150, 50);
-
         
-
         JPanel p = new JPanel();
+
         // Set the background, black with 125 as alpha value
         // This is less transparent
         p.add(l);
         p.setBackground(new Color(0,0,0,125));
+        p.add(tf);
+        p.add(b);
         
+
         // Create another JPanel
         JPanel q=new JPanel();
         
@@ -49,7 +56,7 @@ class testy extends JFrame
         f.add(p);
         f.add(q);
         
-        // Set the size of the JFrame and
+        // Set the size of the JFrame and 
         // make it visible
         f.setSize(1750,850); 
         f.setVisible(true);

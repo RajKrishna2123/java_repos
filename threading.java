@@ -35,7 +35,7 @@ class test extends Thread
     {
         x=a;y=b;
     }
-    @override
+ 
     public void run()
     {
         for(int i=this.x;i<=this.y;i++)

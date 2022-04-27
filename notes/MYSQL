@@ -1,0 +1,31 @@
+chest sheet 
+............>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<....................
+
+insert into test(clumn name ) values( values);
+update test set column="" where clumn1="";
+delete from test where column="";
+
+
+join syntax 😑😑
+select * 
+from test1 
+join os 
+on test1.ID=os.ID;
+
+
+non equi join are the join statement that is based over a non equaltiy
+comaprion b/w two columns of of the table 
+
+cross join acts same as cross prodduct b/w two sets so same here too.
+
+natural join automatically points out common column name in the 
+table 
+
+right join takes care that all members of the table in right are listed 
+left join makes sure that all members of table in left must be paired 
+ 
+
+union command that collects all data from both table and put in under same column 
+in the same way as ID continuosly but leaves all common values 
+
+union

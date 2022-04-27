@@ -34,7 +34,7 @@ public class framework extends JFrame
 		//f.setLayout(null);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);
-		f.show();
+		//f.show();
 
 	}
 
