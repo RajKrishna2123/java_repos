@@ -36,7 +36,7 @@ class gui extends JFrame
         JLabel l5=new JLabel("enter desired number to be added in given area below");
         l5.setForeground(Color.GREEN);
         JLabel l2=new JLabel("<html><center>This Project has been prepared by<br/><br/>"
-        +"Name:- Raj Krishna <br/> sap_ID:- 1000015049 <br/> roll_no:- 200102297 <center></html>");
+        +"Name:- Kumar Shivam<br/> sap_ID:- 1000015024 <br/> roll_no:- 200105023 <center></html>");
         l2.setForeground(Color.ORANGE);
         JTextArea in = new JTextArea();
         in.setColumns(30);
